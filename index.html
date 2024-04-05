@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Listas</title>
+    <style>
+        fieldset {
+            width: 30%;    
+        }
+    </style>
 </head>
 <body>
     <h1>Receita - Pudim de Leite Condensado</h1>
@@ -30,16 +35,119 @@
     </ol>
 
     <dl>
-            <dt>NOVA ODESSA</dt>
-            <dd>
-                    Nova Odessa é um município brasileiro do estado de São Paulo. Localiza-se a uma latitude 22º 46' 40" sul e a uma longitude 47º 17' 45" oeste,
+        <dt>NOVA ODESSA</dt>
+        <dd>
+            Nova Odessa é um município brasileiro do estado de São Paulo. Localiza-se a uma latitude 22º 46' 40" sul e a uma longitude 47º 17' 45" oeste,
             estando a uma altitude de 570 metros. Sua população de acordo com o Censo 2022 (IBGE) era de 62 019 habitantes. Possui uma área de 73,788 km.
-            </dd>
-            <dt>SÃO PAULO</dt>
-            <dd>
-                    São Paulo é um estado da região Sudeste.
+        </dd>
+        <dt>SÃO PAULO</dt>
+        <dd>
+            São Paulo é um estado da região Sudeste.
             A economia cafeeira proporcionou rápido desenvolvimento urbano e industrial, e hoje o estado é o principal centro econômico do país.
-            </dd>
+        </dd>
         </dl>
+
+        <table border="6" width="50%">
+            <tr>
+            <th>FRUTAS</th>
+            <th>VERDURAS</th>
+            <th>LEGUMES</th>
+            </tr>
+            <tr align="center">
+            <td>Melancia</td>
+            <td>Alface</td>
+            <td>Abóbora</td>
+            </tr>
+            <tr align="center">
+            <td>Banana</td>
+            <td>Rúcula</td>
+            <td>Pepino</td>
+            </tr>
+            </table>
+
+            <br>
+
+            <form action="teste.html">
+                <label>Nome</label>
+                <input name="nome" />
+            
+            <button type="submit">
+            Enviar formulário
+            </button>
+            
+            <button type="reset">
+            Limpar formulário
+            </button>
+            
+            <button type="button">
+            Sem ação padrão
+            </button>
+            
+            <button>Sem ação padrão</button>
+            </form>
+
+            <br>
+
+            <form>
+                <span>masculino</span>
+                <input type="radio" name="genero" value="Masculino" />
+                <span>feminino</span>
+                <input type="radio" name="genero" value="Feminino" />
+                <span>outro</span>
+                <input type="radio" name="genero" value="Outro" />
+                </form>
+
+                <br>
+
+                <form>
+                    <span>masculino</span>
+                    <input type="checkbox" name="genero-check" value="Masculino" />
+                    <span>feminino</span>
+                    <input type="checkbox" name="genero-check" value="Feminino" />
+                    <span>outro</span>
+                    <input type="checkbox" name="genero-check" value="Outro" />
+                    </form>
+
+                    <hr>
+
+                    <select name="tamanhos">
+                        <option value="G">Grande</option>
+                        <option value="M">Médio</option>
+                        <option value="P">Pequeno</option>
+                    </select>
+                    
+                    <button>enviar</button>
+                </form>
+
+        <hr>
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            Gênero:
+            <form>
+                <span>masculino</span>
+                <input type="radio" name="genero" value="Masculino" />
+                <span>feminino</span>
+                <input type="radio" name="genero" value="Feminino" />
+                <span>outro</span>
+                <input type="radio" name="genero" value="Outro" />
+                </form>
+
+                <label>Nome:</label><br>
+                <input name="nome" /><br>
+
+                <label>Sobrenome:</label><br>
+                <input name="nome" /><br>
+
+                Tamanho:<br>
+                <select name="tamanhos">
+                    <option value="G">Grande</option>
+                    <option value="M">Médio</option>
+                    <option value="P">Pequeno</option>
+                </select><br>
+                
+                <button>enviar</button><br>
+
+        </fieldset>
 </body>
 </html>
